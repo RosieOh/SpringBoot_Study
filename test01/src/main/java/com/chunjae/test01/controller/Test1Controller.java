@@ -1,4 +1,4 @@
-package com.chunjae.test01.Controller;
+package com.chunjae.test01.controller;
 
 import com.chunjae.test01.domain.Test1;
 import com.chunjae.test01.mapper.Test1Mapper;
