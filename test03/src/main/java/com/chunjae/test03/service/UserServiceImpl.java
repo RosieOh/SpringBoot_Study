@@ -40,22 +40,32 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<Euser> getByEmail(String email) {
+    public Euser getByEmail(String email) {
         return userMapper.getByEmail(email);
     }
 
     @Override
-    public List<Euser> getByName(String name) {
+    public Euser getByName(String name) {
         return userMapper.getByName(name);
     }
 
     @Override
-    public List<Euser> findByEmail(String email, String tel) {
+    public Euser findByEmail(String email, String tel) {
         return userMapper.findByEmail(email, tel);
     }
 
     @Override
-    public List<Euser> findByPw(String email, String tel, String name) {
+    public Euser findByPw(String email, String tel, String name) {
         return userMapper.findByPw(email, tel, name);
+    }
+
+    @Override
+    public void insertUser(Euser euser) {
+        userMapper.insertUser(euser);
+    }
+
+    @Override
+    public void editUser(Euser euser) {
+        userMapper.editUser(euser);
     }
 }

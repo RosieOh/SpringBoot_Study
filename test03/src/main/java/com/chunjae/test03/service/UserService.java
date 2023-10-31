@@ -10,9 +10,10 @@ public interface UserService {
     public void getWithdraw(String name);
     public void getActivate(String name);
     public void getDormant(String name);
-    public List<Euser> getByEmail(String email);
-    public List<Euser> getByName(String name);
-    public List<Euser> findByEmail(String email, String tel);
-    public List<Euser> findByPw(String email, String tel, String name);
-
+    public Euser getByEmail(String email);
+    public Euser getByName(String name);
+    public Euser findByEmail(String email, String tel);
+    public Euser findByPw(String email, String tel, String name);
+    public void insertUser(Euser euser);
+    public void editUser(Euser euser);
 }

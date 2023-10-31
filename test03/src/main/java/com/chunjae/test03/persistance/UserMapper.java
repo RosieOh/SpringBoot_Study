@@ -12,8 +12,10 @@ public interface UserMapper {
     void getWithdraw(String name);
     void getActivate(String name);
     void getDormant(String name);
-    List<Euser> getByEmail(String email);
-    List<Euser> getByName(String name);
-    List<Euser> findByEmail(String email, String tel);
-    List<Euser> findByPw(String email, String tel, String name);
+    Euser getByEmail(String email);
+    Euser getByName(String name);
+    Euser findByEmail(String email, String tel);
+    Euser findByPw(String email, String tel, String name);
+    void insertUser(Euser euser);
+    void editUser(Euser euser);
 }

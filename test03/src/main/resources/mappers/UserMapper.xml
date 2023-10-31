@@ -43,4 +43,15 @@
         select * from euser where email = #{email} and tel = #{tel} and name = #{name}
     </select>
 
+    <!-- 회원가입  -->
+    <insert id="insertUser">
+        INSERT INTO euser VALUES (#{name}, #{email}, #{pw}, #{tel}, default, default, default)
+    </insert>
+
+    <!-- 회원정보 변경  -->
+    <update id="editUser">
+        UPDATE euser SET pw=#{pw} email=#{email}, tel=#{tel} WHERE name=#{name}
+    </update>
+
+
 </mapper>
