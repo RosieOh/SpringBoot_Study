@@ -7,7 +7,7 @@
         <result property="userName" column="user_name"/>
         <result property="password" column="password" />
     </resultMap>
-    <select id="findUserByLoginId" resultMap="User">
+        <select id="findUserByLoginId" resultMap="User">
         select user_id, active, login_id, user_name, password from user
         <where>
             <if test="loginId != null and loginId != '' ">
