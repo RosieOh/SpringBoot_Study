@@ -51,6 +51,8 @@ public class ExamController {
 
     @GetMapping("/sample3")
     public String getSample3(Model model) {
+        String[] cate = new String[]{"Company", "Service", "Product", "Community"};
+        model.addAttribute("cate", cate);
         return "exam/sample3";
     }
 }
