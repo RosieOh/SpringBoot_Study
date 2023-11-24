@@ -6,8 +6,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum /Role {
+public enum Role {
     ADMIN("ADMIN"), EMP("EMP"), USER("USER");
     private String value;
 }
-git

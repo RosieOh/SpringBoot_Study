@@ -1,22 +1,23 @@
 package com.chunjae.test07.domain;
 
-import lombok.AllArgsConstructor;
+import com.chunjae.test07.entity.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
 import java.util.Arrays;
 import java.util.Collection;
-import com.chunjae.test07.entity.User;
 
+//UserDetails(스프링시큐리티에서 기본적으로 제공하는 인터페이스)
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
 public class UserPrincipal implements UserDetails {
 
     private User user;
+
+    public UserPrincipal(User user){
+        this.user = user;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -33,25 +34,21 @@ public class UserPrincipal implements UserDetails {
         return user.getUserName();
     }
 
-    // 계정이 있는지 없는지 확인 없으면 true, 있으면 false
     @Override
     public boolean isAccountNonExpired() {
         return true;
     }
 
-    // 인가된 사람만 호출 가능
     @Override
     public boolean isAccountNonLocked() {
         return true;
     }
 
-    //
     @Override
     public boolean isCredentialsNonExpired() {
         return true;
     }
 
-    // 사용 권한 있음 1, 없음 0
     @Override
     public boolean isEnabled() {
         return user.getActive() == 1;
@@ -61,7 +58,7 @@ public class UserPrincipal implements UserDetails {
         return user.getLoginId();
     }
 
-    public String getName() {
+    public String getName(){
         return user.getUserName();
     }
 }
