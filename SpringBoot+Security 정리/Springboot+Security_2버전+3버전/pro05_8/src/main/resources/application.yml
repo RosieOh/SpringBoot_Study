@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/edutstore
+    url: jdbc:mariadb://localhost:3306/pracboot01
     username: root
     password: 1234
   jpa:
