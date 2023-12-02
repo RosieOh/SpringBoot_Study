@@ -24,7 +24,6 @@ public class DataSourceTests {
         @Cleanup
         Connection con = dataSource.getConnection();
 
-        log.info(con);
 
         Assertions.assertNotNull(con);
     }
