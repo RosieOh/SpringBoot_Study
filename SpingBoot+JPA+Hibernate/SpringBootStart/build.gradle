@@ -41,6 +41,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
     testImplementation 'org.springframework.security:spring-security-test:5.7.2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testAnnotationProcessor 'org.projectlombok:lombok'
 }
 tasks.named('test') {
     useJUnitPlatform()
