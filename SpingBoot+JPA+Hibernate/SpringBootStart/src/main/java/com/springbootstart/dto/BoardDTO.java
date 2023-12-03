@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 
-// 462p 부터 시작
 public class BoardDTO {
 
     private Long bno;
