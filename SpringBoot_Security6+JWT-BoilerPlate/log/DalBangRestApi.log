@@ -1,0 +1,50 @@
+2024-01-30 17:23:21.551 INFO  [background-preinit] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-30 17:23:21.594 INFO  [main] [com.jwtpractice.JwtpracticeApplication] - Starting JwtpracticeApplication using Java 17.0.8 with PID 5292 (/Users/otaehun/Desktop/0130/SpringBoot_Security6+JWT-BoilerPlate/build/classes/java/main started by otaehun in /Users/otaehun/Desktop/0130/SpringBoot_Security6+JWT-BoilerPlate)
+2024-01-30 17:23:21.597 INFO  [main] [com.jwtpractice.JwtpracticeApplication] - No active profile set, falling back to 1 default profile: "default"
+2024-01-30 17:23:22.457 INFO  [main] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 17:23:22.528 INFO  [main] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2024-01-30 17:23:23.057 INFO  [main] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8089 (http)
+2024-01-30 17:23:23.064 INFO  [main] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8089"]
+2024-01-30 17:23:23.065 INFO  [main] [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2024-01-30 17:23:23.065 INFO  [main] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-01-30 17:23:23.109 INFO  [main] [o.a.c.c.C.[.[localhost].[/dalbang]] - Initializing Spring embedded WebApplicationContext
+2024-01-30 17:23:23.110 INFO  [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1466 ms
+2024-01-30 17:23:23.246 INFO  [main] [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 17:23:23.285 INFO  [main] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-30 17:23:23.312 INFO  [main] [o.h.c.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2024-01-30 17:23:23.515 INFO  [main] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-30 17:23:23.537 INFO  [main] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2024-01-30 17:23:23.637 INFO  [main] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2d24cdd9
+2024-01-30 17:23:23.639 INFO  [main] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2024-01-30 17:23:24.286 INFO  [main] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-30 17:23:24.645 INFO  [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 17:23:25.144 WARN  [main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 17:23:25.351 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e93d23e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@743b7025, org.springframework.security.web.context.SecurityContextHolderFilter@ef59aee, org.springframework.security.web.header.HeaderWriterFilter@4a467ada, org.springframework.web.filter.CorsFilter@5eadc347, org.springframework.web.filter.CorsFilter@28b16193, org.springframework.security.web.authentication.logout.LogoutFilter@33a58fcb, com.jwtpractice.global.security.jwt.JwtAuthenticationFilter@71b32407, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45a4587d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70a91d72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78e34499, org.springframework.security.web.access.ExceptionTranslationFilter@6f986031, org.springframework.security.web.access.intercept.AuthorizationFilter@3733b1f4]
+2024-01-30 17:23:25.360 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-30 17:23:25.360 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/h2-console/**']
+2024-01-30 17:23:25.360 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-30 17:23:25.360 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/favicon.ico']
+2024-01-30 17:23:25.360 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-30 17:23:25.360 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2024-01-30 17:23:25.360 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-30 17:23:25.361 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2024-01-30 17:23:25.361 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-30 17:23:25.361 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/img/**']
+2024-01-30 17:23:25.361 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/lib/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-30 17:23:25.361 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/lib/**']
+2024-01-30 17:23:25.557 INFO  [main] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8089"]
+2024-01-30 17:23:25.573 INFO  [main] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8089 (http) with context path '/dalbang'
+2024-01-30 17:23:25.585 INFO  [main] [com.jwtpractice.JwtpracticeApplication] - Started JwtpracticeApplication in 4.361 seconds (process running for 5.563)
+2024-01-30 17:26:09.456 INFO  [http-nio-8089-exec-1] [o.a.c.c.C.[.[localhost].[/dalbang]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 17:26:09.458 INFO  [http-nio-8089-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2024-01-30 17:26:09.465 INFO  [http-nio-8089-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 6 ms
+2024-01-30 17:27:02.854 INFO  [http-nio-8089-exec-3] [c.j.global.security.jwt.JwtTokenProvider] - token provider exp: 1706606822854
+2024-01-30 17:27:02.876 INFO  [http-nio-8089-exec-3] [c.j.d.member.member.service.AuthService] - 유효하지 않을 때
+2024-01-30 17:27:02.877 INFO  [http-nio-8089-exec-3] [c.j.global.security.jwt.JwtTokenProvider] - 리프레시 토큰 생성하는 곳
+2024-01-30 17:28:33.605 WARN  [http-nio-8089-exec-6] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries]
+2024-01-30 17:29:27.776 INFO  [http-nio-8089-exec-9] [c.j.global.security.jwt.JwtTokenProvider] - token provider exp: 1706606967776
+2024-01-30 17:29:27.781 INFO  [http-nio-8089-exec-9] [c.j.d.member.member.service.AuthService] - 유효하지 않을 때
+2024-01-30 17:29:27.782 INFO  [http-nio-8089-exec-9] [c.j.global.security.jwt.JwtTokenProvider] - 리프레시 토큰 생성하는 곳
+2024-01-30 17:34:40.008 INFO  [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 17:34:40.012 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2024-01-30 17:34:40.019 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
